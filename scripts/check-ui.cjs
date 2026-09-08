@@ -80,8 +80,9 @@ const path = process.env.BELLWORKS_SCREENSHOTS || process.cwd() + '/screenshots'
   await page.keyboard.press('Home'); assert.equal(await page.locator('#session-title').textContent(),'Push & Squat');
   await page.locator('#warmup-toggle').click(); assert.equal(await page.locator('#warmup-content').isVisible(),true);
   await page.locator('#warmup-toggle').click();
-  await page.locator('#theme-toggle').click(); assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
-  await page.waitForTimeout(100); await page.evaluate(()=>scrollTo({top:0,behavior:'instant'})); await page.screenshot({path:path+'/dark.png',fullPage:true});
+  assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
+  await page.locator('#theme-toggle').click(); assert.equal(await page.locator('html').getAttribute('data-theme'),'light');
+  await page.waitForTimeout(100); await page.evaluate(()=>scrollTo({top:0,behavior:'instant'})); await page.screenshot({path:path+'/light.png',fullPage:true});
   await page.locator('#theme-toggle').click();
   for (const width of [1920,1280,1024,820,768,760,600,430,390,360,320]) {
     await page.setViewportSize({width,height:900}); await page.waitForTimeout(120);

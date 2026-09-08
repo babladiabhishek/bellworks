@@ -23,7 +23,7 @@ The app no longer loads a 3D engine, models or synthetic movement animations. Th
 ## Files
 
 - `bellworks.html` — app structure.
-- `bellworks.css` and `video-studio.css` — responsive interface and video studio, including dark theme.
+- `bellworks.css` and `video-studio.css` — responsive interface and video studio. Dark theme is the default; the header toggle switches to light and the choice is remembered per device.
 - `bellworks.js` — program data, navigation, workout state, timer and progress.
 - `exercise-videos.js` — explicit exercise-to-video mapping, verified titles, channel attribution and duration.
 - `youtube-player.js` — click-to-play embeds, playback lifecycle and error handling.

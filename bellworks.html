@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Bellworks — Your training, with purpose.</title>
   <meta name="description" content="Your kettlebell training space. Exercise-specific YouTube tutorials, three purposeful sessions, set tracking and personal progress.">
   <meta name="color-scheme" content="light dark">
-  <script>try { var t = localStorage.getItem('bw.theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <script>try { var t = localStorage.getItem('bw.theme'); document.documentElement.dataset.theme = t === 'light' ? 'light' : 'dark'; } catch (e) {}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="bellworks.css">
@@ -45,7 +45,7 @@
       <div class="topbar-actions">
         <span class="today" id="today"></span>
         <span class="topbar-divider" aria-hidden="true"></span>
-        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme"></button>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme"></button>
       </div>
     </header>
 
