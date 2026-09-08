@@ -1,0 +1,115 @@
+{
+  "checkedOn": "2026-09-07",
+  "environment": "Chromium, local HTTP app, Sweden",
+  "checks": "Embedded video had readyState >= 2, was not paused, and its playback time advanced. No browser exceptions.",
+  "results": [
+    {
+      "slug": "goblet-squat",
+      "videoId": "xTM-e_Gj5sA",
+      "playing": true,
+      "durationSeconds": 1182
+    },
+    {
+      "slug": "oh-press",
+      "videoId": "gjr-QAdsq4o",
+      "playing": true,
+      "durationSeconds": 21
+    },
+    {
+      "slug": "floor-press",
+      "videoId": "ULSq3zY9gt4",
+      "playing": true,
+      "durationSeconds": 40
+    },
+    {
+      "slug": "rev-lunge",
+      "videoId": "gWN9epxFqX8",
+      "playing": true,
+      "durationSeconds": 22
+    },
+    {
+      "slug": "tri-ext",
+      "videoId": "55ynz3DR-xA",
+      "playing": true,
+      "durationSeconds": 37
+    },
+    {
+      "slug": "farmer-carry",
+      "videoId": "sZAx0TVLwPI",
+      "playing": true,
+      "durationSeconds": 48
+    },
+    {
+      "slug": "kb-deadlift",
+      "videoId": "l6gDwf3xC6s",
+      "playing": true,
+      "durationSeconds": 15
+    },
+    {
+      "slug": "gorilla-row",
+      "videoId": "bLM3nLvoRdc",
+      "playing": true,
+      "durationSeconds": 42
+    },
+    {
+      "slug": "swing",
+      "videoId": "1cVT3ee9mgU",
+      "playing": true,
+      "durationSeconds": 27
+    },
+    {
+      "slug": "pullover",
+      "videoId": "hbiDlO7VBxs",
+      "playing": true,
+      "durationSeconds": 114
+    },
+    {
+      "slug": "curl",
+      "videoId": "mPiTdI_FcOY",
+      "playing": true,
+      "durationSeconds": 5
+    },
+    {
+      "slug": "suitcase-carry",
+      "videoId": "iq5D5SU2Oq4",
+      "playing": true,
+      "durationSeconds": 19
+    },
+    {
+      "slug": "clean-press",
+      "videoId": "km3f8_rpDdg",
+      "playing": true,
+      "durationSeconds": 26
+    },
+    {
+      "slug": "front-squat",
+      "videoId": "OkJNQiPJjBk",
+      "playing": true,
+      "durationSeconds": 22
+    },
+    {
+      "slug": "pushup",
+      "videoId": "25RMyEBywow",
+      "playing": true,
+      "durationSeconds": 12
+    },
+    {
+      "slug": "sl-rdl",
+      "videoId": "CohgHMsoS2s",
+      "playing": true,
+      "durationSeconds": 110
+    },
+    {
+      "slug": "renegade-row",
+      "videoId": "NNTpBlHRcA4",
+      "playing": true,
+      "durationSeconds": 13
+    },
+    {
+      "slug": "rack-carry",
+      "videoId": "eJCc5tjQjk0",
+      "playing": true,
+      "durationSeconds": 9
+    }
+  ]
+}

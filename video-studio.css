@@ -1,0 +1,65 @@
+/* Reusable video surfaces; page layouts live in bellworks.css. */
+.video-badge { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 8px; font-weight: 700; letter-spacing: .8px; white-space: nowrap; }
+.video-badge .icon { width: 23px; height: 17px; padding: 4px; border-radius: 5px; color: #fff; background: #cd322c; fill: currentColor; stroke-width: 1; }
+.video-view { width: 100%; min-width: 0; }
+.video-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; min-height: 200px; background: #102016; border-radius: 13px; overflow: hidden; isolation: isolate; }
+.video-stage iframe { display: block; position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-poster { position: absolute; inset: 0; display: block; width: 100%; height: 100%; padding: 0; overflow: hidden; text-align: left; color: #fff; background: #102016; }
+.video-poster:disabled { opacity: .7; cursor: wait; }
+.video-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-poster::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(transparent 45%, #07170bbf); }
+.video-poster:focus-visible { outline: 3px solid var(--lime); outline-offset: -5px; }
+.video-play-disc { position: absolute; z-index: 1; display: grid; place-items: center; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 60px; height: 60px; border-radius: 50%; color: #1c3624; background: #e3f7b9; box-shadow: 0 5px 25px #07140c44; transition: background .2s, scale .2s; }
+.video-play-disc .icon { width: 22px; height: 22px; fill: currentColor; margin-left: 3px; }
+.video-poster:hover .video-play-disc { background: #fff; scale: 1.06; }
+.video-poster-caption { position: absolute; left: 18px; right: 16px; bottom: 16px; z-index: 1; display: grid; gap: 4px; }
+.video-poster-caption > span { font-size: 8px; letter-spacing: 1.3px; color: #e2ecda; font-weight: 600; }
+.video-poster-caption strong { font-size: 14px; font-weight: 600; }
+.video-duration { position: absolute; z-index: 1; top: 10px; right: 10px; color: #fff; background: #10221cdd; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-variant-numeric: tabular-nums; }
+.video-credit { display: flex; align-items: center; gap: 10px; padding: 15px 0; min-width: 0; border-bottom: 1px solid var(--line); }
+.youtube-mark { flex: 0 0 28px; height: 21px; display: grid; place-items: center; color: #fff; background: #cd322c; border-radius: 6px; }
+.youtube-mark .icon { width: 12px; height: 12px; fill: currentColor; }
+.video-credit > div { display: grid; gap: 3px; min-width: 0; }
+.video-credit > div > span { color: var(--muted); font-size: 8px; font-weight: 600; letter-spacing: .8px; }
+.video-channel { font-size: 12px; line-height: 1.5; font-weight: 600; overflow-wrap: anywhere; }
+.video-channel:hover { text-decoration: underline; text-underline-offset: 3px; }
+.video-external { display: flex; align-items: center; gap: 4px; min-height: 44px; margin-left: auto; padding-left: 7px; flex-shrink: 0; font-size: 11px; color: var(--accent); font-weight: 600; }
+.video-external:hover { text-decoration: underline; }
+.video-external .icon { width: 14px; height: 14px; }
+.video-status { color: var(--ink); background: var(--accent-soft); border-radius: 10px; font-size: 13px; line-height: 1.7; padding: 13px 15px; margin-top: 14px; }
+.exercise-thumb { position: relative; align-self: center; width: 100%; height: 80px; background: #173c29; border-radius: 9px; overflow: hidden; }
+.exercise-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.exercise-number { position: absolute; left: 5px; top: 5px; z-index: 1; padding: 1px 5px; font-size: 9px; color: #fff; background: #10291add; border-radius: 4px; }
+.exercise-thumb .video-duration { top: auto; right: 4px; bottom: 4px; font-size: 8px; padding: 1px 4px; }
+.thumb-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; background: #152e21c7; color: #fff; }
+.thumb-play .icon { width: 11px; height: 11px; fill: currentColor; margin-left: 1px; }
+.library-visual { position: relative; height: auto; aspect-ratio: 16 / 9; border-radius: 11px; overflow: hidden; background: #173c29; }
+.library-visual img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.library-visual > .pill { position: absolute; left: 10px; bottom: 10px; background: #f0f6e6eb; color: #204631; font-size: 10px; }
+.library-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #fff; background: #183625cc; }
+.library-play .icon { width: 16px; height: 16px; fill: currentColor; margin-left: 2px; }
+.library-card:hover .library-play { background: #284d32; }
+@media (max-width: 1250px) {
+  .video-badge { font-size: 0; gap: 0; }
+  .video-channel { font-size: 11px; }
+  .video-external { font-size: 10px; }
+  .video-credit { gap: 8px; }
+  .video-credit > div > span { font-size: 7px; }
+}
+@media (max-width: 760px) {
+  .video-play-disc { width: 56px; height: 56px; }
+  .video-channel { font-size: 12px; }
+  .video-external { font-size: 11px; }
+  .video-credit { padding: 12px 0; }
+  .video-credit > div > span { font-size: 8px; }
+  .exercise-thumb { height: 86px; }
+  .workout-visual .video-credit { border-bottom: 0; }
+}
+@media (max-width: 370px) {
+  .video-credit > div > span { font-size: 7px; }
+  .video-credit { gap: 7px; }
+  .video-channel { font-size: 11px; }
+  .video-external { font-size: 10px; }
+  .youtube-mark { flex-basis: 25px; height: 19px; }
+  .video-poster-caption strong { font-size: 13px; }
+}

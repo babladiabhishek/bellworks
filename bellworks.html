@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bellworks — Your training, with purpose.</title>
+  <meta name="description" content="Your kettlebell training space. Exercise-specific YouTube tutorials, three purposeful sessions, set tracking and personal progress.">
+  <meta name="color-scheme" content="light dark">
+  <script>try { var t = localStorage.getItem('bw.theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="bellworks.css">
+  <link rel="stylesheet" href="video-studio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="sidebar">
+    <span class="brand"><span class="brand-icon" data-icon="bell"></span>bellworks<span class="brand-period">.</span></span>
+    <p class="workspace-label">YOUR TRAINING SPACE</p>
+    <nav class="main-nav" aria-label="Sections">
+      <a class="nav-item" data-nav="training" href="#training"><span data-icon="grid"></span><span>My program</span><span class="nav-dot" aria-hidden="true"></span></a>
+      <a class="nav-item" data-nav="exercises" href="#exercises"><span data-icon="dumbbell"></span><span>Exercise library</span><span class="nav-count">18</span></a>
+      <a class="nav-item" data-nav="progress" href="#progress"><span data-icon="chart"></span><span>My progress</span></a>
+      <a class="nav-item" data-nav="guide" href="#guide"><span data-icon="book"></span><span>Training guide</span></a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="small-manifesto">
+        <span class="manifesto-mark" aria-hidden="true">&#8599;</span>
+        <p>A little stronger. Every session.</p>
+        <span>SHOW UP. MAKE IT COUNT.</span>
+      </div>
+      <div class="local-profile">
+        <span class="avatar" data-icon="user"></span>
+        <div><strong>Your personal space</strong><span>Saved on this device</span></div>
+        <span class="save-dot" aria-hidden="true"></span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand mobile-brand" href="#training" aria-label="Bellworks home"><span class="brand-icon" data-icon="bell"></span>bellworks<span class="brand-period">.</span></a>
+      <div class="breadcrumb">Your space <span>/</span> <strong id="page-label">My program</strong></div>
+      <div class="topbar-actions">
+        <span class="today" id="today"></span>
+        <span class="topbar-divider" aria-hidden="true"></span>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme"></button>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+
+      <!-- ============ MY PROGRAM ============ -->
+      <section class="page-view" id="view-training" aria-labelledby="training-heading">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">YOUR TRAINING, WITH PURPOSE.</p>
+            <h1 id="training-heading">Make room for stronger<span>.</span></h1>
+            <p>A clear plan. Good form. One session at a time.</p>
+          </div>
+          <a class="text-link" href="#guide">Program guide <span data-icon="arrow-up-right"></span></a>
+        </div>
+
+        <div class="overview-grid">
+        <div class="hero-banner">
+          <div class="hero-copy">
+            <span class="hero-badge"><i aria-hidden="true"></i> YOUR PROGRAM · 8 WEEKS</span>
+            <h2>Kettlebell<br>foundations<span>.</span></h2>
+            <p>Build strength that stays with you.</p>
+            <button class="button button-lime" id="start-workout" type="button"><span data-icon="play"></span><span id="start-label">Start Day A</span><span data-icon="arrow-right"></span></button>
+            <div class="hero-meta"><span data-icon="clock"></span><span>35–45 min</span><span class="meta-dot">·</span><span>Beginner friendly</span></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <span class="hero-index">01 <span>/ 03</span></span>
+            <span class="hero-orbit"></span>
+            <span class="hero-orbit orbit-two"></span>
+            <svg class="sculpture" viewBox="0 0 320 300">
+              <defs>
+                <radialGradient id="bell-body" cx="38%" cy="32%" r="75%">
+                  <stop offset="0" stop-color="#3f6a4d"/>
+                  <stop offset="0.55" stop-color="#1f3d2d"/>
+                  <stop offset="1" stop-color="#0d1f16"/>
+                </radialGradient>
+                <linearGradient id="bell-handle" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2d5038"/>
+                  <stop offset="1" stop-color="#0f2419"/>
+                </linearGradient>
+              </defs>
+              <path d="M108 122C96 60 128 30 160 30s64 30 52 92" fill="none" stroke="url(#bell-handle)" stroke-width="30" stroke-linecap="round"/>
+              <path d="M118 108C110 66 132 46 160 46s50 20 42 62" fill="none" stroke="#dfedab" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+              <circle cx="160" cy="186" r="98" fill="url(#bell-body)"/>
+              <path d="M100 125Q160 102 220 125" fill="none" stroke="#a6c4a0" stroke-width="2" opacity=".45"/>
+              <circle cx="160" cy="192" r="46" fill="#0b1912" opacity=".8"/>
+              <text x="160" y="200" text-anchor="middle" font-family="Manrope, DM Sans, sans-serif" font-weight="800" font-size="40" fill="#f4f5e9">16</text>
+              <text x="160" y="222" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="11" letter-spacing="3" fill="#b8cfb0">KG</text>
+              <ellipse cx="124" cy="150" rx="22" ry="34" fill="#ffffff" opacity=".07" transform="rotate(-25 124 150)"/>
+            </svg>
+            <span class="hero-word">STRONGER</span>
+            <span class="art-caption">LESS EQUIPMENT. MORE YOU.</span>
+          </div>
+        </div>
+
+        <section class="momentum-card" aria-labelledby="momentum-heading">
+          <div class="momentum-heading"><span class="eyebrow">YOUR MOMENTUM</span><span data-icon="chart"></span></div>
+          <h2 id="momentum-heading">Every set counts.</h2>
+          <div class="momentum-summary">
+            <div class="momentum-ring" id="momentum-ring" role="progressbar" aria-label="Program sets logged" aria-valuemin="0" aria-valuemax="48" aria-valuenow="0"><div><strong id="momentum-sets">0</strong><span>sets logged</span></div></div>
+            <div class="momentum-copy"><strong id="momentum-complete">0 of 18</strong><span>movements complete</span><small>Saved on this device</small></div>
+          </div>
+          <a class="momentum-link" href="#progress">View your progress <span data-icon="arrow-up-right"></span></a>
+        </section>
+        </div>
+
+        <div class="program-facts">
+          <div><span class="fact-icon" data-icon="calendar"></span><div><strong>3 days <span>/ week</span></strong><span>Room to recover</span></div></div>
+          <div><span class="fact-icon" data-icon="layers"></span><div><strong>8-week <span>block</span></strong><span>Built for consistency</span></div></div>
+          <div><span class="fact-icon" data-icon="dumbbell"></span><div><strong>18 <span>movements</span></strong><span>Every muscle, covered</span></div></div>
+        </div>
+
+        <div class="training-layout">
+          <div class="session-picker">
+            <div class="section-heading"><h2>Your sessions</h2><span class="small muted">Pick a day. Find your flow.</span></div>
+            <div class="day-tabs" id="day-tabs" role="tablist" aria-label="Training sessions"></div>
+          </div>
+
+          <div class="session-column">
+            <div class="session-summary">
+              <div>
+                <h3 id="session-title">Push &amp; Squat</h3>
+                <p id="session-description"></p>
+              </div>
+              <span class="session-count" id="session-count">0 / 6 completed</span>
+            </div>
+            <div class="session-progress" role="progressbar" aria-label="Session progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><span id="session-progress-fill"></span></div>
+
+            <button class="warmup-bar" id="warmup-toggle" type="button" aria-expanded="false" aria-controls="warmup-content">
+              <span class="warmup-icon" data-icon="sun"></span>
+              <span><strong>First, a little warm-up</strong><span>5-minute warm-up · 2 easy rounds</span></span>
+              <span data-icon="chevron-down"></span>
+            </button>
+            <div class="warmup-content" id="warmup-content" hidden>
+              <span><b>01</b>Halo, both directions<em>×8 each way</em></span>
+              <span><b>02</b>Goblet squat pry, sit in the bottom<em>×5 · 3 s hold</em></span>
+              <span><b>03</b>Hip hinge with the bell<em>×10</em></span>
+              <span><b>04</b>Easy swings<em>×10</em></span>
+            </div>
+
+            <div class="exercise-list" id="exercise-list" role="tabpanel"></div>
+
+            <div class="session-footer">
+              <span data-icon="shield-check"></span><span>Your weights and sets save automatically.</span>
+              <button class="text-link" id="reset-session" type="button">Reset session</button>
+            </div>
+            <div class="coach-note">
+              <span data-icon="sparkles"></span>
+              <div><strong>Good reps beat rushed reps.</strong><p>Finish each set with a little left in the tank. Make your last rep look like your first.</p></div>
+            </div>
+          </div>
+          <aside class="inspector" aria-labelledby="studio-heading">
+            <div class="inspector-header">
+              <div>
+                <p class="eyebrow">A CLOSER LOOK</p>
+                <h2 id="studio-heading">Movement studio</h2>
+              </div>
+              <span class="video-badge"><span data-icon="play"></span> VIDEO GUIDE</span>
+            </div>
+            <div class="studio-media">
+              <div id="studio-video" class="video-view"></div>
+              <div class="studio-watch-note"><span data-icon="book"></span><div><strong>See the form. Feel the difference.</strong><p>Watch the setup and the full movement. Pause or slow the video whenever you need.</p></div></div>
+            </div>
+            <div class="inspector-content">
+              <div class="exercise-heading">
+                <span class="eyebrow" id="studio-index">EXERCISE 01 / 06</span>
+                <span class="pill" id="studio-pattern">Squat</span>
+              </div>
+              <h3 id="studio-title">Goblet Squat</h3>
+              <p class="form-cue" id="studio-cue"></p>
+              <div class="studio-specs" id="studio-specs"></div>
+              <button class="button button-outline full-width" id="open-exercise" type="button">Train this movement <span data-icon="arrow-right"></span></button>
+            </div>
+            <div class="anatomy-panel">
+              <div class="section-heading">
+                <h4>Where you’ll feel it</h4>
+                <div class="segmented" role="group" aria-label="Body view">
+                  <button type="button" id="map-front" aria-pressed="true">Front</button>
+                  <button type="button" id="map-back" aria-pressed="false">Back</button>
+                </div>
+              </div>
+              <div class="anatomy-content">
+                <div id="body-map"></div>
+                <div id="muscle-tags"></div>
+              </div>
+              <div class="muscle-key"><span><i aria-hidden="true"></i>Primary</span><span><i aria-hidden="true"></i>Assisting</span></div>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+      <!-- ============ EXERCISE LIBRARY ============ -->
+      <section class="page-view" id="view-exercises" aria-labelledby="library-heading" hidden>
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">LEARN THE MOVEMENT. OWN THE REP.</p>
+            <h1 id="library-heading">Find your next movement<span>.</span></h1>
+            <p>18 movements. Real demonstrations. Find your next good rep.</p>
+          </div>
+        </div>
+        <div class="library-toolbar">
+          <label class="search-field"><span data-icon="search"></span><input type="search" id="exercise-search" placeholder="Find a movement or muscle…" aria-label="Search movements" autocomplete="off"></label>
+          <label class="filter-field">Focus <select id="muscle-filter" aria-label="Filter by muscle"><option value="all">All muscles</option></select></label>
+        </div>
+        <div class="library-meta"><span id="library-count">18 movements</span><span>Choose a movement to explore</span></div>
+        <div class="library-grid" id="library-grid"></div>
+        <div class="empty-state" id="library-empty" hidden>
+          <span data-icon="search"></span>
+          <h3>Nothing matches that yet</h3>
+          <p>Try another movement, pattern or muscle.</p>
+          <button class="button button-outline" id="clear-search" type="button">Clear search</button>
+        </div>
+      </section>
+
+      <!-- ============ MY PROGRESS ============ -->
+      <section class="page-view" id="view-progress" aria-labelledby="progress-heading" hidden>
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">SMALL STEPS. REAL MOMENTUM.</p>
+            <h1 id="progress-heading">Look how far you’re going<span>.</span></h1>
+            <p>Your current training log, saved on this device.</p>
+          </div>
+        </div>
+        <div class="progress-stats" id="progress-stats"></div>
+        <div class="progress-layout">
+          <div class="surface-card">
+            <div class="section-heading"><h2>Your training log</h2><span class="pill">Current sessions</span></div>
+            <div id="training-log"></div>
+          </div>
+          <div class="surface-card">
+            <h2>A wave, not a race.</h2>
+            <p class="muted">Repeat this four-week progression for your eight-week block.</p>
+            <div class="timeline">
+              <div><span>01</span><h3>Find your baseline</h3><p>Start at the bottom of the rep range. Find a weight you can control.</p></div>
+              <div><span>02–03</span><h3>Build your reps</h3><p>Add a clean rep when you can. Keep the same bell.</p></div>
+              <div><span>04</span><h3>Earn the next bell</h3><p>Reach the top of the range on every set before increasing the weight.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="surface-card volume-card">
+          <div class="section-heading">
+            <div><p class="eyebrow">THE PROGRAM, AT A GLANCE</p><h2>Balanced work. Full-body strength.</h2></div>
+            <span class="small muted">Planned sets / week</span>
+          </div>
+          <div class="volume-chart" id="volume-chart"></div>
+          <p class="chart-note">Programmed volume across all three days, not completed sets. Primary work counts as one set; assisting work counts as half a set.</p>
+        </div>
+      </section>
+
+      <!-- ============ TRAINING GUIDE ============ -->
+      <section class="page-view" id="view-guide" aria-labelledby="guide-heading" hidden>
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">PRINCIPLES OVER PROGRAMS.</p>
+            <h1 id="guide-heading">Train with intent<span>.</span></h1>
+            <p>How to get the most from three sessions a week and one kettlebell.</p>
+          </div>
+        </div>
+        <div class="guide-feature">
+          <p class="eyebrow">THE APPROACH</p>
+          <h2>Strength is a practice,<br>not a sprint.</h2>
+          <p>Three full-body sessions a week, each built around the six things a kettlebell does best: squat, hinge, press, pull, carry, and everything your core does while you hold one. Show up, move well, add a little each week.</p>
+        </div>
+        <div class="guide-grid">
+          <div class="surface-card"><span class="guide-number">01 · EFFORT</span><h2>Leave reps in the tank</h2><p>End every set with one to three clean reps still available. The last rep should look like the first. Grinding teaches bad form; crisp reps build strength that lasts.</p></div>
+          <div class="surface-card"><span class="guide-number">02 · PROGRESSION</span><h2>Reps first, then the bell</h2><p>Kettlebells jump in 4 kg steps, so progress through reps. When you hit the top of a range on every set, take the next bell up and restart at the bottom of the range.</p></div>
+          <div class="surface-card"><span class="guide-number">03 · RECOVERY</span><h2>Grow between sessions</h2><p>Train on non-consecutive days, sleep seven to nine hours, and eat enough protein — around 1.6 to 2.2 g per kilogram of bodyweight. Every six to eight weeks, take a lighter week.</p></div>
+        </div>
+        <div class="surface-card">
+          <div class="section-heading"><h2>Warm up before every session</h2><span class="small muted">About five minutes · two easy rounds</span></div>
+          <div class="warmup-guide">
+            <div><span>01</span><strong>Halo</strong><p>Eight each direction. Circle the bell around your head to open the shoulders.</p></div>
+            <div><span>02</span><strong>Goblet squat pry</strong><p>Five reps, three seconds in the bottom. Press the knees out with the elbows.</p></div>
+            <div><span>03</span><strong>Hip hinge</strong><p>Ten reps with a light bell. Hips back, flat back, feel the hamstrings.</p></div>
+            <div><span>04</span><strong>Easy swings</strong><p>Ten light swings to rehearse the hinge and wake the whole body up.</p></div>
+          </div>
+        </div>
+        <div class="guide-equipment surface-card">
+          <span data-icon="bell"></span>
+          <div>
+            <h2>One kettlebell is enough</h2>
+            <p>Most people start pressing with 8–12 kg and squatting, rowing and hinging with 12–16 kg. If you are between sizes, take the lighter one — clean reps above the range beat heavy reps below it. A second matching bell doubles the load on squats, presses and carries once the top of a range feels easy.</p>
+          </div>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <span class="footer-brand">bellworks.</span>
+        <span>Built around you. One rep at a time.</span>
+        <span class="footer-local"><i aria-hidden="true"></i> Your training stays on this device</span>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- ============ WORKOUT MODE ============ -->
+  <dialog id="workout-dialog" aria-labelledby="workout-title">
+    <div class="workout-top">
+      <span class="brand compact"><span class="brand-icon" data-icon="bell"></span>bellworks<span class="brand-period">.</span></span>
+      <span class="workout-mode" id="workout-position">MOVEMENT 01 / 06</span>
+      <button class="icon-button" id="close-workout" type="button" aria-label="Close workout mode"><span data-icon="x"></span></button>
+    </div>
+    <div class="workout-body">
+      <div class="workout-visual">
+        <div id="workout-video" class="video-view"></div>
+        <div class="workout-video-note"><span data-icon="target"></span><p>Take your time. Learn the movement, then log each set as you go.</p></div>
+      </div>
+      <div class="workout-details">
+        <div class="workout-intro">
+        <span class="eyebrow" id="workout-day">DAY A · PUSH &amp; SQUAT</span>
+        <h2 id="workout-title">Goblet Squat</h2>
+        <p id="workout-cue"></p>
+        <div class="workout-prescription" id="workout-prescription"></div>
+        </div>
+        <div class="workout-logging">
+        <div class="set-label"><h3>Your sets</h3><span id="workout-set-count">0 / 3 completed</span></div>
+        <div class="set-buttons" id="workout-sets"></div>
+        <label class="weight-field">
+          <span>Bell weight<small>Saved for this exercise</small></span>
+          <span><input type="number" id="workout-weight" min="0" max="999" step="0.5" inputmode="decimal" placeholder="—" aria-label="Bell weight in kilograms"> kg</span>
+        </label>
+        <div class="rest-timer">
+          <div><span class="eyebrow">REST TIMER</span><strong id="rest-display">Ready</strong></div>
+          <div class="rest-actions">
+            <button class="icon-button" id="rest-start" type="button" aria-label="Start rest timer"></button>
+            <button class="icon-button" id="rest-reset" type="button" aria-label="Reset rest timer"><span data-icon="rotate"></span></button>
+            <button class="text-link" id="rest-skip" type="button">Skip rest</button>
+          </div>
+          <div class="rest-track"><span id="rest-fill"></span></div>
+        </div>
+        <details class="variation">
+          <summary>Need a variation?</summary>
+          <p id="workout-swap"></p>
+        </details>
+        </div>
+      </div>
+    </div>
+    <div class="workout-footer">
+        <button class="button button-dark full-width" id="log-set" type="button">Complete set 1</button>
+        <div class="workout-nav">
+          <button class="text-link" id="previous-exercise" type="button"><span data-icon="arrow-left"></span>Previous</button>
+          <button class="text-link" id="next-exercise" type="button">Next exercise</button>
+        </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span data-icon="check"></span>
+    <span id="toast-message"></span>
+    <button id="toast-undo" type="button" hidden>Undo</button>
+  </div>
+
+  <noscript><div class="noscript">Bellworks needs JavaScript to track your sessions and show the movement studio.</div></noscript>
+
+  <script src="exercise-videos.js"></script>
+  <script src="youtube-player.js"></script>
+  <script src="bellworks.js"></script>
+</body>
+</html>
